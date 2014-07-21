@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Allen Chen's Pages]]></title>
+  <link href="http://a3linux.github.io/atom.xml" rel="self"/>
+  <link href="http://a3linux.github.io/"/>
+  <updated>2014-07-21T14:52:42+08:00</updated>
+  <id>http://a3linux.github.io/</id>
+  <author>
+    <name><![CDATA[Allen Chen]]></name>
+    <email><![CDATA[a3linux@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Test Cite With Octopress]]></title>
+    <link href="http://a3linux.github.io/blog/2014/07/21/a-test-cite-with-octopress/"/>
+    <updated>2014-07-21T14:24:48+08:00</updated>
+    <id>http://a3linux.github.io/blog/2014/07/21/a-test-cite-with-octopress</id>
+    <content type="html"><![CDATA[<h1>My first cite of Octopress</h1>
+
+<p>Wonderful world and blogging with VIM by Octopress</p>
+]]></content>
+  </entry>
+  
+</feed>
