@@ -4,7 +4,7 @@
   <title><![CDATA[Allen Chen's Pages]]></title>
   <link href="http://a3linux.github.io/atom.xml" rel="self"/>
   <link href="http://a3linux.github.io/"/>
-  <updated>2014-07-21T14:52:42+08:00</updated>
+  <updated>2014-07-21T15:16:08+08:00</updated>
   <id>http://a3linux.github.io/</id>
   <author>
     <name><![CDATA[Allen Chen]]></name>
@@ -14,13 +14,19 @@
 
   
   <entry>
-    <title type="html"><![CDATA[A Test Cite With Octopress]]></title>
-    <link href="http://a3linux.github.io/blog/2014/07/21/a-test-cite-with-octopress/"/>
+    <title type="html"><![CDATA[A Test Bite Octopress]]></title>
+    <link href="http://a3linux.github.io/blog/2014/07/21/a-test-bite-of-octopress/"/>
     <updated>2014-07-21T14:24:48+08:00</updated>
-    <id>http://a3linux.github.io/blog/2014/07/21/a-test-cite-with-octopress</id>
-    <content type="html"><![CDATA[<h1>My first cite of Octopress</h1>
+    <id>http://a3linux.github.io/blog/2014/07/21/a-test-bite-of-octopress</id>
+    <content type="html"><![CDATA[<h2>My first bite of Octopress</h2>
 
-<p>Wonderful world and blogging with VIM by Octopress</p>
+<p>Wonderful world and blogging with VIM by Octopress!</p>
+
+<p>VIM, Markdown, Git, GitHub, so many fantastic tools
+put them together, I try to reload my Blog after years from
+broken up blogging on blogspot because of blocked in China.</p>
+
+<p>:&ndash;)</p>
 ]]></content>
   </entry>
   
