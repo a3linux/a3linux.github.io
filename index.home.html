@@ -1,159 +1,120 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>A3Linux Home Portal</title>
-		<meta name="description" content="Quick Bookmark">
-		<meta name="author" content="SitePoint">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="col-12">
-				<form method="get" action="http://www.google.com/search">
-					<input class="form-control" type="text" name="q" size="64" maxlength="255" value="" placeholder="Google Search..." autofocus/>
-				</form>
-			</div>
-		</nav>
-		<div class="container-fluid bg-dark">
-			<div class="row">
-				<div class="col-4 col-sm-3">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-warning">
-							<a href="https://www.newsmax.com/">NewsMax</a>
-						</li>
-						<li class="list-group-item list-group-item-light">
-							<a href="https://www.youtube.com/">YouTube</a>
-						</li>
-						<li class="list-group-item list-group-item-info">
-							<a href="https://facebook.com/">Facebook</a>
-						</li>
-            <li class="list-group-item list-group-item-warning">
-							<a href="https://duckduckgo.com/">DuckDuckGo</a>
-            </li>
-            <li class="list-group-item list-group-item-primary">
-							<a href="https://www.straitstimes.com/">ST</a>
-            </li>
-					</ul>
-				</div>
-				<div class="col-4 col-sm-3">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-warning">
-							<A HREF="http://www.jd.com/">京东商城</A>
-						</li>
-						<li class="list-group-item list-group-item-primary">
-							<A HREF="http://www.taobao.com/">淘宝网</A>
-						</li>
-						<li class="list-group-item list-group-item-dark">
-							<A HREF="http://www.lazada.sg/">Lazada.SG</A>
-						</li>
-						<li class="list-group-item list-group-item-success">
-							<A HREF="http://www.amazon.sg/">AmazonSG</A>
-						</li>
-						<li class="list-group-item list-group-item-success">
-							<A HREF="http://www.amazon.com/">AmazonUS</A>
-						</li>
-						<li class="list-group-item list-group-item-light">
-							<A HREF="http://www.shopee.sg/">Shopee</A>
-						</li>
-						<li class="list-group-item list-group-item-danger">
-							<A HREF="https://www.ezbuy.sg">ezBuy</A>
-						</li>
-					</ul>
-				</div>
-				<div class="col-4 col-sm-3">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-danger">
-							<a href="https://www.tradingview.com/">TradingView</a>
-						</li>
-						<li class="list-group-item list-group-item-warning">
-							<a href="https://finance.yahoo.com/">Finance Yahoo</a>
-						</li>
-						<li class="list-group-item list-group-item-info">
-							<a href="https://cn.reuters.com">Reuters(CN)</a>
-						</li>
-						<li class="list-group-item list-group-item-dark">
-							<a href="https://www.marketwatch.com/">MarketWatch</a>
-						</li>
-						<li class="list-group-item list-group-item-success">
-							<a href="https://xe.com">XE.com</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+  <head>
+    <meta charset="utf-8">
+    <title>A3Linux Home Portal</title>
+    <meta name="description" content="Quick Bookmark">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+.btn {
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: none;
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size:16px;
+  line-height:18px;
+  font-weight:800;
+  text-transform:uppercase;
+  padding:4px 8px;
+  margin: 10px;
+}
 
-      <div class="col-12 col-sm-6">
-        <ul class="list-group list-group-horizontal list-group-flush">
-          <li class="list-group-item list-group-item-success">
-            <a href="https://dytt8.net">DYTT8</a>
-          </li>
-          <li class="list-group-item list-group-item-info">
-            <a href="https://91mjw.com">91mju</a>
-          </li>
-          <li class="list-group-item list-group-item-danger">
-            <a href="https://www.o8tv.com">555DY</a>
-          </li>
-          <li class="list-group-item list-group-item-warning">
-            <a href="https://www.mudvod.tv">泥巴影院</a>
-          </li>
-        </ul>
-      </div>
+.btn-outlined {
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;}
 
-      <div class="col-12 col-sm-6">
-        <ul class="list-group list-group-horizontal list-group-flush">
-          <li class="list-group-item list-group-item-success">
-            <a href="https://a3linux.myvnc.com/nextcloud">CZC</a>
-          </li>
-          <li class="list-group-item list-group-item-info">
-            <a href="https://a3linux.myvnc.com/jellyfin/web/index.html">Jellyfin</a>
-          </li>
-          <li class="list-group-item list-group-item-danger">
-            <a href="https://mail.google.com/">GMail</a>
-          </li>
-          <li class="list-group-item list-group-item-warning">
-            <a href="https://www.evernote.com/client/web?login=true">Evernote</a>
-          </li>
-          <li class="list-group-item list-group-item-dark">
-            <a href="https://keep.google.com/u/0/">Keep</a>
-          </li>
-          <li class="list-group-item list-group-item-primary">
-							<A HREF="https://calendar.google.com">Calendar</A>
-          </li>
-          <li class="list-group-item list-group-item-secondary">
-							<A HREF="https://sheets.google.com">Sheets</A>
-          </li>
-          <li class="list-group-item list-group-item-info">
-							<A HREF="https://docs.google.com">Docs</A>
-          </li>
-          <li class="list-group-item list-group-item-dark">
-							<A HREF="https://www.inpixio.com/remove-background/">RemoveBackground</A>
-          </li>
-        </ul>
-      </div>
-		</div>
-    <div class="w-100">
+.btn-outlined.btn-blue {
+  background: none;
+  color: #00BBFF;
+  border-color: #00BBFF;
+}
+.btn-outlined.btn-blue:hover,
+.btn-outlined.btn-blud:active {
+  color: #FFFFFF;
+  background: #77BBFF;
+  border-color: #77BBFF;
+}
+.btn-lg {
+  font-size: 24px;
+  line-height:24px;
+  border: 4px solid;
+  padding:20px 20px;}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="col-12">
-        <ul class="list-group list-group-flush list-group-horizontal">
-          <li class="list-group-item list-group-item-dark"><A HREF="index.adsk.html">ADSK</A></li>
-          <li class="list-group-item"><A HREF="http://captive.apple.com/hotspot-detect.html">Apple HotSpot Detect</A></li>
-        </ul>
-		 	</div>
-		  <div class="form-group">
-		 	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		 		  <div class="col-12">
-		 			  <form method="get" action="https://zh.wikipedia.org/w/index.php">
-		 				  <input class="form-control" type="text" name="search" size="64" maxlength="255" placeholder="Chinese WikiPedia Search ...">
-		 			  </form>
-		 		  </div>
-		 	  </nav>
-		  </div>
+        <form method="get" action="https://www.google.com/search">
+          <input class="form-control" type="text" name="q" size="64" maxlength="255" value="" placeholder="Google Search..." autofocus/>
+        </form>
+      </div>
+    </nav>
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col-4 col-sm-3">
+              <a href="https://www.newsmax.com/" class="btn btn-outlined btn-blue btn-lg">NewsMax</a>
+              <a href="https://www.youtube.com/" class="btn btn-outlined btn-blue btn-lg">YouTube</a>
+              <a href="https://facebook.com/" class="btn btn-outlined btn-blue btn-lg">Facebook</a>
+              <a href="https://duckduckgo.com/" class="btn btn-outlined btn-blue btn-lg">DuckDuckGo</a>
+              <a href="https://www.straitstimes.com/" class="btn btn-outlined btn-blue btn-lg">ST</a>
+        </div>
+        <div class="col-4 col-sm-3">
+              <A HREF="http://www.jd.com/" class="btn btn-outlined btn-blue btn-lg">京东商城</A>
+              <A HREF="http://www.taobao.com/" class="btn btn-outlined btn-blue btn-lg">淘宝网</A>
+              <A HREF="http://www.lazada.sg/" class="btn btn-outlined btn-blue btn-lg">Lazada.SG</A>
+              <A HREF="http://www.amazon.sg/" class="btn btn-outlined btn-blue btn-lg">AmazonSG</A>
+              <A HREF="http://www.amazon.com/" class="btn btn-outlined btn-blue btn-lg">AmazonUS</A>
+              <A HREF="http://www.shopee.sg/" class="btn btn-outlined btn-blue btn-lg">Shopee</A>
+              <A HREF="https://www.ezbuy.sg" class="btn btn-outlined btn-blue btn-lg">ezBuy</A>
+        </div>
+        <div class="col-4 col-sm-3">
+              <a href="https://www.tradingview.com/" class="btn btn-outlined btn-blue btn-lg">TradingView</a>
+              <a href="https://finance.yahoo.com/" class="btn btn-outlined btn-blue btn-lg">Finance Yahoo</a>
+              <a href="https://cn.reuters.com" class="btn btn-outlined btn-blue btn-lg">Reuters(CN)</a>
+              <a href="https://www.marketwatch.com/" class="btn btn-outlined btn-blue btn-lg">MarketWatch</a>
+              <a href="https://xe.com" class="btn btn-outlined btn-blue btn-lg">XE.com</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6">
+            <a href="https://a3linux.myvnc.com/nextcloud" class="btn btn-outlined btn-blue btn-lg">CZC</a>
+            <a href="https://a3linux.myvnc.com/jellyfin/web/index.html" class="btn btn-outlined btn-blue btn-lg">Jellyfin</a>
+            <a href="https://mail.google.com/" class="btn btn-outlined btn-blue btn-lg">GMail</a>
+            <a href="https://www.evernote.com/client/web?login=true" class="btn btn-outlined btn-blue btn-lg">Evernote</a>
+            <a href="https://keep.google.com/u/0/" class="btn btn-outlined btn-blue btn-lg">Keep</a>
+            <A HREF="https://calendar.google.com" class="btn btn-outlined btn-blue btn-lg">Calendar</A>
+            <A HREF="https://sheets.google.com" class="btn btn-outlined btn-blue btn-lg">Sheets</A>
+            <A HREF="https://docs.google.com" class="btn btn-outlined btn-blue btn-lg">Docs</A>
+            <A HREF="https://www.inpixio.com/remove-background/" class="btn btn-outlined btn-blue btn-lg">RemoveBackground</A>
+      </div>
     </div>
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	</body>
+    <div class="w-100 bg-dark">
+    </div>
+    <div class="w-100 bg-dark">
+      <div class="col-12 bg-dark">
+        <ul class="list-group list-group-flush list-group-horizontal">
+          <li class="list-group-item list-group-item-info"><A HREF="http://captive.apple.com/hotspot-detect.html">Apple HotSpot Detect</A></li>
+          <li class="list-group-item list-group-item-dark"><A HREF="index.adsk.html">ADSK</A></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
