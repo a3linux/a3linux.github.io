@@ -1,120 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>A3Linux Home Portal</title>
-    <meta name="description" content="Quick Bookmark">
-    <meta name="author" content="SitePoint">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-.btn {
-  letter-spacing: 1px;
-  text-decoration: none;
-  background: none;
-  -moz-user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 0;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 0;
-  vertical-align: middle;
-  white-space: nowrap;
-  font-size:16px;
-  line-height:18px;
-  font-weight:800;
-  text-transform:uppercase;
-  padding:4px 8px;
-  margin: 10px;
-}
 
-.btn-outlined {
-  border-radius: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;}
+<head>
+  <meta charset="utf-8" />
+  <title>A3Linux Home Portal</title>
+  <meta name="description" content="Quick Bookmark" />
+  <meta name="author" content="SitePoint" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <style>
+    .btn {
+      letter-spacing: 1px;
+      text-decoration: none;
+      background: none;
+      -moz-user-select: none;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 0;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      margin: 10px;
+    }
 
-.btn-outlined.btn-blue {
-  background: none;
-  color: #00BBFF;
-  border-color: #00BBFF;
-}
-.btn-outlined.btn-blue:hover,
-.btn-outlined.btn-blud:active {
-  color: #FFFFFF;
-  background: #77BBFF;
-  border-color: #77BBFF;
-}
-.btn-lg {
-  font-size: 24px;
-  line-height:24px;
-  border: 4px solid;
-  padding:20px 20px;}
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    .btn-outlined {
+      border-radius: 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .btn-outlined.btn-blue {
+      background: none;
+      color: #2288ff;
+      border-color: #2288ff;
+    }
+
+    .btn-outlined.btn-blue:hover,
+    .btn-outlined.btn-blue:active {
+      color: #ffffff;
+      background: #7788ff;
+      border-color: #7788ff;
+    }
+
+    .btn-outlined.btn-yellow {
+      background: none;
+      color: #c2b507;
+      border-color: #c2b507;
+    }
+
+    .btn-outlined.btn-yellow:hover,
+    .btn-outlined.btn-yellow:active {
+      color: #ffffff;
+      background: #cbc804;
+      border-color: #cbc804;
+    }
+
+    .btn-outlined.btn-cyan {
+      background: none;
+      color: #0077bb;
+      border-color: #0077bb;
+    }
+
+    .btn-outlined.btn-cyan:hover,
+    .btn-outlined.btn-cyan:active {
+      color: #ffffff;
+      background: #4477bb;
+      border-color: #4477bb;
+    }
+
+    .btn-outlined.btn-green {
+      background: none;
+      color: #007700;
+      border-color: #007700;
+    }
+
+    .btn-outlined.btn-green:hover,
+    .btn-outlined.btn-green:active {
+      color: #ffffff;
+      background: #447700;
+      border-color: #447700;
+    }
+
+    .btn-lg {
+      font-size: 24px;
+      line-height: 24px;
+      border: 4px solid;
+      padding: 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="col-12">
+      <form method="get" action="https://www.google.com/search">
+        <input class="form-control" type="text" name="q" size="64" maxlength="255" value=""
+          placeholder="Google Search..." autofocus />
+      </form>
+    </div>
+  </nav>
+  <div class="container-fluid bg-dark">
+    <div class="row">
       <div class="col-12">
-        <form method="get" action="https://www.google.com/search">
-          <input class="form-control" type="text" name="q" size="64" maxlength="255" value="" placeholder="Google Search..." autofocus/>
-        </form>
+        <a href="https://www.newsmax.com/" class="btn btn-outlined btn-yellow btn-lg">NewsMax</a>
+        <a href="https://www.youtube.com/" class="btn btn-outlined btn-yellow btn-lg">YouTube</a>
+        <a href="https://facebook.com/" class="btn btn-outlined btn-yellow btn-lg">Facebook</a>
+        <a href="https://duckduckgo.com/" class="btn btn-outlined btn-yellow btn-lg">DuckDuckGo</a>
+        <a href="https://www.straitstimes.com/" class="btn btn-outlined btn-yellow btn-lg">ST</a>
       </div>
-    </nav>
-    <div class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col-4 col-sm-3">
-              <a href="https://www.newsmax.com/" class="btn btn-outlined btn-blue btn-lg">NewsMax</a>
-              <a href="https://www.youtube.com/" class="btn btn-outlined btn-blue btn-lg">YouTube</a>
-              <a href="https://facebook.com/" class="btn btn-outlined btn-blue btn-lg">Facebook</a>
-              <a href="https://duckduckgo.com/" class="btn btn-outlined btn-blue btn-lg">DuckDuckGo</a>
-              <a href="https://www.straitstimes.com/" class="btn btn-outlined btn-blue btn-lg">ST</a>
-        </div>
-        <div class="col-4 col-sm-3">
-              <A HREF="http://www.jd.com/" class="btn btn-outlined btn-blue btn-lg">京东商城</A>
-              <A HREF="http://www.taobao.com/" class="btn btn-outlined btn-blue btn-lg">淘宝网</A>
-              <A HREF="http://www.lazada.sg/" class="btn btn-outlined btn-blue btn-lg">Lazada.SG</A>
-              <A HREF="http://www.amazon.sg/" class="btn btn-outlined btn-blue btn-lg">AmazonSG</A>
-              <A HREF="http://www.amazon.com/" class="btn btn-outlined btn-blue btn-lg">AmazonUS</A>
-              <A HREF="http://www.shopee.sg/" class="btn btn-outlined btn-blue btn-lg">Shopee</A>
-              <A HREF="https://www.ezbuy.sg" class="btn btn-outlined btn-blue btn-lg">ezBuy</A>
-        </div>
-        <div class="col-4 col-sm-3">
-              <a href="https://www.tradingview.com/" class="btn btn-outlined btn-blue btn-lg">TradingView</a>
-              <a href="https://finance.yahoo.com/" class="btn btn-outlined btn-blue btn-lg">Finance Yahoo</a>
-              <a href="https://cn.reuters.com" class="btn btn-outlined btn-blue btn-lg">Reuters(CN)</a>
-              <a href="https://www.marketwatch.com/" class="btn btn-outlined btn-blue btn-lg">MarketWatch</a>
-              <a href="https://xe.com" class="btn btn-outlined btn-blue btn-lg">XE.com</a>
-        </div>
+      <div class="col-12">
+        <a href="http://www.jd.com/" class="btn btn-outlined btn-blue btn-lg">京东商城</a>
+        <a href="http://www.taobao.com/" class="btn btn-outlined btn-blue btn-lg">淘宝网</a>
+        <a href="http://www.lazada.sg/" class="btn btn-outlined btn-blue btn-lg">Lazada.SG</a>
+        <a href="http://www.amazon.sg/" class="btn btn-outlined btn-blue btn-lg">AmazonSG</a>
+        <a href="http://www.amazon.com/" class="btn btn-outlined btn-blue btn-lg">AmazonUS</a>
+        <a href="http://www.shopee.sg/" class="btn btn-outlined btn-blue btn-lg">Shopee</a>
+        <a href="https://www.ezbuy.sg" class="btn btn-outlined btn-blue btn-lg">ezBuy</a>
       </div>
+      <div class="col-12">
+        <a href="https://www.tradingview.com/" class="btn btn-outlined btn-green btn-lg">TradingView</a>
+        <a href="https://finance.yahoo.com/" class="btn btn-outlined btn-green btn-lg">Finance Yahoo</a>
+        <a href="https://cn.reuters.com" class="btn btn-outlined btn-green btn-lg">Reuters(CN)</a>
+        <a href="https://www.marketwatch.com/" class="btn btn-outlined btn-green btn-lg">MarketWatch</a>
+        <a href="https://xe.com" class="btn btn-outlined btn-green btn-lg">XE.com</a>
+      </div>
+      <div class="col-12">
+        <a href="https://me.income.com.sg/summary/life" class="btn btn-outlined btn-cyan btn-lg">NTUC InCome</a>
+        <a href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action"
+          class="btn btn-outlined btn-cyan btn-lg">Citi SG</a>
+        <a href="https://retail.sc.com/sg/nfs/login.htm" class="btn btn-outlined btn-cyan btn-lg">SC SG</a>
+      </div>
+      <div class="col-12">
+        <a href="https://mail.google.com/" class="btn btn-outlined btn-yellow btn-lg">GMail</a>
+        <a href="https://www.evernote.com/client/web?login=true" class="btn btn-outlined btn-green btn-lg">Evernote</a>
+        <a href="https://keep.google.com/u/0/" class="btn btn-outlined btn-yellow btn-lg">Keep</a>
+        <a href="https://calendar.google.com" class="btn btn-outlined btn-yellow btn-lg">Calendar</a>
+        <a href="https://sheets.google.com" class="btn btn-outlined btn-yellow btn-lg">Sheets</a>
+        <a href="https://docs.google.com" class="btn btn-outlined btn-yellow btn-lg">Docs</a>
+      </div>
+      <div class="col-12">
+        <a href="https://a3linux.myvnc.com/nextcloud" class="btn btn-outlined btn-blue btn-lg">CZC</a>
+        <a href="https://www.inpixio.com/remove-background/"
+          class="btn btn-outlined btn-blue btn-lg">RemoveBackground</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 bg-dark"></div>
+  <div class="w-100 bg-dark">
+    <div class="col-12 bg-dark">
+      <ul class="list-group list-group-flush list-group-horizontal">
+        <li class="list-group-item list-group-item-info">
+          <a href="http://captive.apple.com/hotspot-detect.html">Apple HotSpot Detect</a>
+        </li>
+        <li class="list-group-item list-group-item-dark">
+          <a href="index.adsk.html">ADSK</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
 
-      <div class="col-12 col-sm-6">
-            <a href="https://a3linux.myvnc.com/nextcloud" class="btn btn-outlined btn-blue btn-lg">CZC</a>
-            <a href="https://a3linux.myvnc.com/jellyfin/web/index.html" class="btn btn-outlined btn-blue btn-lg">Jellyfin</a>
-            <a href="https://mail.google.com/" class="btn btn-outlined btn-blue btn-lg">GMail</a>
-            <a href="https://www.evernote.com/client/web?login=true" class="btn btn-outlined btn-blue btn-lg">Evernote</a>
-            <a href="https://keep.google.com/u/0/" class="btn btn-outlined btn-blue btn-lg">Keep</a>
-            <A HREF="https://calendar.google.com" class="btn btn-outlined btn-blue btn-lg">Calendar</A>
-            <A HREF="https://sheets.google.com" class="btn btn-outlined btn-blue btn-lg">Sheets</A>
-            <A HREF="https://docs.google.com" class="btn btn-outlined btn-blue btn-lg">Docs</A>
-            <A HREF="https://www.inpixio.com/remove-background/" class="btn btn-outlined btn-blue btn-lg">RemoveBackground</A>
-      </div>
-    </div>
-    <div class="w-100 bg-dark">
-    </div>
-    <div class="w-100 bg-dark">
-      <div class="col-12 bg-dark">
-        <ul class="list-group list-group-flush list-group-horizontal">
-          <li class="list-group-item list-group-item-info"><A HREF="http://captive.apple.com/hotspot-detect.html">Apple HotSpot Detect</A></li>
-          <li class="list-group-item list-group-item-dark"><A HREF="index.adsk.html">ADSK</A></li>
-        </ul>
-      </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
 </html>
