@@ -50,6 +50,13 @@
       border-color: #2288ff;
     }
 
+    .btn-outlined.btn-none:hover,
+    .btn-outlined.btn-none:active {
+      color: #fff;
+      background: #444;
+      border-color: #444;
+    }
+
     .btn-outlined.btn-blue:hover,
     .btn-outlined.btn-blue:active {
       color: #ffffff;
@@ -103,73 +110,86 @@
       padding: 16px;
     }
 
+    li img {
+      width: 32px;
+    }
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="col-12">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
       <form method="get" action="https://www.google.com/search">
         <input class="form-control" type="text" name="q" size="64" maxlength="255" value=""
           placeholder="Google Search..." autofocus />
+      </form>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <form method="get" id="search" action="https://duckduckgo.com/">
+        <input class="form-control" type="text" name="q" maxlength="300" placeholder="DuckDuckGo Search .."/>
       </form>
     </div>
   </nav>
   <div class="container-fluid bg-dark">
     <div class="row">
       <div class="col-12">
-        <a href="https://a3linux.myvnc.com/nextcloud" class="btn btn-outlined btn-blue btn-lg" title="HomeCloud(NextCloud)"><img src="imgs/home.png" alt="HomeCloud"></img></a>
-        <a href="https://mail.google.com/" class="btn btn-outlined btn-blue btn-lg" title="GMail"><img src="imgs/gmail.png" alt="GMail"></img></a>
-        <a href="https://drive.google.com/drive/my-drive?ths=true" class="btn btn-outlined btn-blue btn-lg" title="Google Drive"><img src="imgs/gdrive.png" alt="Google Drive"></img></a>
-        <a href="https://www.youtube.com/" class="btn btn-outlined btn-blue btn-lg" title="YouTube"><img src="imgs/youtube.jpg" alt="YouTube"></img></a>
-        <a href="https://facebook.com/" class="btn btn-outlined btn-blue btn-lg" title="Facebook"><img src="imgs/facebook.jpg" alt="Facebook"></img></a>
-        <a href="https://twitter.com/" class="btn btn-outlined btn-blue btn-lg" title="Twitter"><img src="imgs/twitter.png" alt="Twitter"></img></a>
-        <a href="https://internet-banking.dbs.com.sg/IB/Welcome" class="btn btn-outlined btn-blue btn-lg" title="DBS iBanking"><img src="imgs/dbs.png" alt="DBS iBanking"></img></a>
-        <a href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action" class="btn btn-outlined btn-blue btn-lg" title="Citibank SG"><img src="imgs/citi.png" alt="Citibank SG"></img></a>
-        <a href="https://retail.sc.com/sg/nfs/login.htm" class="btn btn-outlined btn-cyan btn-lg" title="Standard Character Bank"><img src="imgs/sc.png" alt="Standard Character Bank online"></img></a>
-        <a href="https://myebank.icbc.com.cn/icbc/perbank/index.jsp?areaCode=0103&dse_locale=zh-CN" class="btn btn-outlined btn-blue btn-lg" title="ICBC 工商银行(新加坡)"><img src="imgs/icbc.png" alt="ICBC工商银行新加坡分行网银"></img></a>
-        <a href="https://me.income.com.sg/summary/life" class="btn btn-outlined btn-cyan btn-lg" title="NTUC Income"><img src="imgs/income.png" alt="NTUC Income"></img></a>
-        <a href="https://www.paypal.com/signin" class="btn btn-outlined btn-cyan btn-lg" title="PayPal"><img src="imgs/paypal.png" alt="Paypal"></img></a>
-        <a href="http://www.jd.com/" class="btn btn-outlined btn-blue btn-lg" title="京东商城"><img src="imgs/jd.png" alt="京东商城"></img></a>
-        <a href="http://www.taobao.com/" class="btn btn-outlined btn-blue btn-lg" title="淘宝"><img src="imgs/taobao.png" alt="淘宝"></img></a>
-        <a href="http://www.lazada.sg/" class="btn btn-outlined btn-blue btn-lg" title="Lazada"><img src="imgs/lazada.png" alt="Lazada"></img></a>
-        <a href="http://www.amazon.sg/" class="btn btn-outlined btn-blue btn-lg" title="Amazon"><img src="imgs/amazonsg.png" alt="Amazon"></img></a>
-        <a href="http://www.shopee.sg/" class="btn btn-outlined btn-blue btn-lg" title="Shopee"><img src="imgs/shopee.png" alt="Shopee"></img></a>
-        <a href="https://www.ezbuy.sg" class="btn btn-outlined btn-blue btn-lg" title="ezBuy"><img src="imgs/ezbuy.png" alt="ezBuy"></img></a>
-        <a href="https://www.cpf.gov.sg/member/login/qr-code" class="btn btn-outlined btn-blue btn-lg" title="CPF"><img src="imgs/cpf.png" alt="CPF"></img></a>
-        <a href="https://eservices.ica.gov.sg/icsbip" class="btn btn-outlined btn-blue btn-lg" title="ICA"><img src="imgs/ica.png" alt="ica"></img></a>
+        <a href="https://a3linux.myvnc.com/nextcloud" class="btn btn-outlined btn-none btn-lg" title="HomeCloud(NextCloud)"><img src="imgs/home.png" alt="HomeCloud"></img></a>
+        <a href="https://mail.google.com/" class="btn btn-outlined btn-none btn-lg" title="GMail"><img src="imgs/gmail.png" alt="GMail"></img></a>
+        <a href="https://drive.google.com/drive/my-drive?ths=true" class="btn btn-outlined btn-none btn-lg" title="Google Drive"><img src="imgs/gdrive.png" alt="Google Drive"></img></a>
+        <a href="https://maps.google.com/" class="btn btn-outlined btn-none btn-lg" title="Google Maps"><img src="imgs/gmaps.png" alt="Google Maps"></img></a>
+        <a href="https://www.youtube.com/" class="btn btn-outlined btn-none btn-lg" title="YouTube"><img src="imgs/youtube.png" alt="YouTube"></img></a>
+        <a href="https://facebook.com/" class="btn btn-outlined btn-none btn-lg" title="Facebook"><img src="imgs/facebook.png" alt="Facebook"></img></a>
+        <a href="https://twitter.com/" class="btn btn-outlined btn-none btn-lg" title="Twitter"><img src="imgs/twitter.png" alt="Twitter"></img></a>
+        <a href="https://internet-banking.dbs.com.sg/IB/Welcome" class="btn btn-outlined btn-none btn-lg" title="DBS iBanking"><img src="imgs/dbs.png" alt="DBS iBanking"></img></a>
+        <a href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action" class="btn btn-outlined btn-none btn-lg" title="Citibank SG"><img src="imgs/citi.png" alt="Citibank SG"></img></a>
+        <a href="https://retail.sc.com/sg/nfs/login.htm" class="btn btn-outlined btn-none btn-lg" title="Standard Character Bank"><img src="imgs/sc.png" alt="Standard Character Bank online"></img></a>
+        <a href="https://myebank.icbc.com.cn/icbc/perbank/index.jsp?areaCode=0103&dse_locale=zh-CN" class="btn btn-outlined btn-none btn-lg" title="ICBC 工商银行(新加坡)"><img src="imgs/icbc.png" alt="ICBC工商银行新加坡分行网银"></img></a>
+        <a href="https://me.income.com.sg/summary/life" class="btn btn-outlined btn-none btn-lg" title="NTUC Income"><img src="imgs/income.png" alt="NTUC Income"></img></a>
+        <a href="https://www.paypal.com/signin" class="btn btn-outlined btn-none btn-lg" title="PayPal"><img src="imgs/paypal.png" alt="Paypal"></img></a>
+        <a href="https://us.etrade.com/e/t/user/login" class="btn btn-outlined btn-none btn-lg" title="eTrade"><img src="imgs/etrade.png" alt="eTrade"></img></a>
+        <a href="http://www.jd.com/" class="btn btn-outlined btn-none btn-lg" title="京东商城"><img src="imgs/jd.png" alt="京东商城"></img></a>
+        <a href="http://www.taobao.com/" class="btn btn-outlined btn-none btn-lg" title="淘宝"><img src="imgs/taobao.png" alt="淘宝"></img></a>
+        <a href="http://www.lazada.sg/" class="btn btn-outlined btn-none btn-lg" title="Lazada"><img src="imgs/lazada.png" alt="Lazada"></img></a>
+        <a href="http://www.amazon.sg/" class="btn btn-outlined btn-none btn-lg" title="Amazon"><img src="imgs/amazonsg.png" alt="Amazon"></img></a>
+        <a href="http://www.shopee.sg/" class="btn btn-outlined btn-none btn-lg" title="Shopee"><img src="imgs/shopee.png" alt="Shopee"></img></a>
+        <a href="https://www.ezbuy.sg" class="btn btn-outlined btn-none btn-lg" title="ezBuy"><img src="imgs/ezbuy.png" alt="ezBuy"></img></a>
+        <a href="https://www.cpf.gov.sg/member/login/qr-code" class="btn btn-outlined btn-none btn-lg" title="CPF"><img src="imgs/cpf.png" alt="CPF"></img></a>
+        <a href="https://eservices.ica.gov.sg/icsbip" class="btn btn-outlined btn-none btn-lg" title="ICA"><img src="imgs/ica.png" alt="ica"></img></a>
+        <a href="https://mytax.iras.gov.sg/ESVWeb/default.aspx?target=MPORLoginSelectionPage" class="btn btn-outlined btn-none btn-lg" title="IRAS Tax Portal"><img src="imgs/iras.png" alt="IRAS Tax Portal"></img></a>
       </div>
       <div class="col-12">
       </div>
       <div class="col-12">
-        <a href="https://www.tradingview.com/" class="btn btn-outlined btn-green btn-lg">TradingView</a>
-        <a href="https://finance.yahoo.com/" class="btn btn-outlined btn-green btn-lg">Finance Yahoo</a>
-        <a href="https://www.reuters.com/?edition-redirect=cn" class="btn btn-outlined btn-green btn-lg">Reuters(CN)</a>
-        <a href="https://www.marketwatch.com/" class="btn btn-outlined btn-green btn-lg">MarketWatch</a>
-        <a href="https://xe.com" class="btn btn-outlined btn-green btn-lg">XE.com</a>
-        <a href="https://asia.citi.com/wealthinsights/" class="btn btn-outlined btn-green btn-lg">CitiGoldInsight</a>
+        <a href="https://asia.citi.com/wealthinsights/" class="btn btn-outlined btn-blue btn-lg">CitiGoldInsight</a>
+        <a href="https://www.straitstimes.com/invest" class="btn btn-outlined btn-blue btn-lg">ST Invest</a>
+        <a href="https://www.tradingview.com/" class="btn btn-outlined btn-blue btn-lg">TradingView</a>
+        <a href="https://www.investing.com/portfolio/?portfolioID=ZWJhO2c0YjY3Z2FsMmA%3D" class="btn btn-outlined btn-blue btn-lg">Investing</a>
+        <a href="https://finance.yahoo.com/" class="btn btn-outlined btn-blue btn-lg">Finance Yahoo</a>
+        <a href="https://www.marketwatch.com/" class="btn btn-outlined btn-blue btn-lg">MarketWatch</a>
+        <a href="https://xe.com" class="btn btn-outlined btn-blue btn-lg">XE.com</a>
       </div>
       <div class="col-12">
+        <a href="https://www.straitstimes.com/" class="btn btn-outlined btn-cyan btn-lg" title="Straits Times">Straits Times</a>
+        <a href="https://www.newsmax.com/" class="btn btn-outlined btn-cyan btn-lg" title="NewsMax">NewsMax</a>
+        <a href="" class="btn btn-outlined btn-cyan btn-lg"></a>
       </div>
       <div class="col-12">
-        <a href="https://www.evernote.com/client/web?login=true" class="btn btn-outlined btn-yellow btn-lg">Evernote</a>
-        <a href="https://calendar.google.com" class="btn btn-outlined btn-yellow btn-lg">Calendar</a>
-        <a href="https://sheets.google.com" class="btn btn-outlined btn-yellow btn-lg">Sheets</a>
-        <a href="https://docs.google.com" class="btn btn-outlined btn-yellow btn-lg">Docs</a>
-        <a href="https://keep.google.com/u/0/" class="btn btn-outlined btn-yellow btn-lg">Keep</a>
-        <a href="https://www.newsmax.com/" class="btn btn-outlined btn-yellow btn-lg">NewsMax</a>
-        <a href="https://duckduckgo.com/" class="btn btn-outlined btn-yellow btn-lg">DuckDuckGo</a>
-        <a href="https://www.straitstimes.com/" class="btn btn-outlined btn-yellow btn-lg">ST</a>
         <a href="https://www.inpixio.com/remove-background/" class="btn btn-outlined btn-yellow btn-lg">去背景工具</a>
       </div>
     </div>
   </div>
-  <div class="w-100 bg-dark"></div>
-  <div class="w-100 bg-dark">
-    <div class="col-12 bg-dark">
+  <div class="w-100 bg-secondary">
+    <div class="col-12">
       <ul class="list-group list-group-flush list-group-horizontal">
-        <li class="list-group-item list-group-item-info"><a href="http://captive.apple.com/hotspot-detect.html">ᯤ </a></li>
-        <li class="list-group-item list-group-item-dark"><a href="index.adsk.html"><img src="imgs/autodesk.png"></img></a>
+        <li class="list-group-item list-group-item-info"><a href="https://web.whatsapp.com" title="WhatsApp WEB"><img src="imgs/whatsapp.png" alt="WhatsApp"></img></a>
+        <li class="list-group-item list-group-item-light"><a href="https://web.telegram.org/z/" title="Telegram WEB"><img src="imgs/telegram.png" alt="Telegram"></img></a>
+        <li class="list-group-item list-group-item-warning"><a href="https://web.wechat.com/?lang=en" title="WeChat WEB 微信"><img src="imgs/wechat.png" alt="微信"></img></a>
+        <li class="list-group-item list-group-item-info"><a href="https://calendar.google.com" title="Google Calendar"><img src="imgs/gcal.png" alt="Google Calendar"></img></a>
+        <li class="list-group-item list-group-item-info"><a href="https://sheets.google.com" title="Google Sheets"><img src="imgs/gsheets.png" alt="Google Sheets"></img></a>
+        <li class="list-group-item list-group-item-info"><a href="https://docs.google.com" title="Google Docs"><img src="imgs/gdocs.png" alt="Google Docs"></img></a>
+        <li class="list-group-item list-group-item-light"><a href="https://www.evernote.com/client/web?login=true" title="Evernote"><img src="imgs/evernote.png" alt="Evernote"></img></a>
+        <li class="list-group-item list-group-item-primary"><a href="index.adsk.html" title="ADSK Working Portal"><img src="imgs/autodesk.png" alt="Autodesk"></img></a>
+        <li class="list-group-item list-group-item-secondary"><a href="http://captive.apple.com/hotspot-detect.html">ᯤ </a></li>
         </li>
       </ul>
     </div>
