@@ -1,8 +1,16 @@
 [
   {
+    "url": "https://mail.google.com/",
+    "title": "GMail"
+  },
+  {
     "url": "https://home.a3linux.com/",
     "title": "NextCloud",
     "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
+  },
+  {
+    "url": "https://web.whatsapp.com",
+    "title": "WhatsApp"
   },
   {
     "url": "https://www.a3linux.com/",
@@ -31,16 +39,16 @@
     "title": "GitHub"
   },
   {
-    "url": "https://mail.google.com/",
-    "title": "GMail"
-  },
-  {
     "url": "https://chat.openai.com/",
     "title": "ChatGPT"
   },
   {
     "url": "https://bard.google.com/",
     "title": "Bard"
+  },
+  {
+    "url": "https://finance.yahoo.com/",
+    "title": "Yahoo"
   },
   {
     "url": "https://drive.google.com/drive/my-drive",
@@ -51,8 +59,20 @@
     "title": "Maps"
   },
   {
-    "url": "https://web.whatsapp.com",
-    "title": "WhatsApp"
+    "url": "http://world.taobao.com/",
+    "title": "Taobao"
+  },
+  {
+    "url": "http://www.lazada.sg/",
+    "title": "Lazada"
+  },
+  {
+    "url": "http://jd.com/",
+    "title": "JD"
+  },
+  {
+    "url": "http://www.amazon.sg/",
+    "title": "AmazonSG"
   },
   {
     "url": "https://us.etrade.com/e/t/user/login",
@@ -119,36 +139,16 @@
     "title": "X"
   },
   {
-    "url": "https://www.youtube.com/",
-    "title": "Youtube"
-  },
-  {
-    "url": "http://jd.com/",
-    "title": "JD"
-  },
-  {
-    "url": "http://world.taobao.com/",
-    "title": "Taobao"
-  },
-  {
-    "url": "http://www.lazada.sg/",
-    "title": "Lazada"
-  },
-  {
-    "url": "http://www.amazon.sg/",
-    "title": "AmazonSG"
-  },
-  {
-    "url": "http://ctrip.com",
-    "title": "CTrip"
-  },
-  {
     "url": "https://www.straitstimes.com/",
     "title": "ST"
   },
   {
-    "url": "https://finance.yahoo.com/",
-    "title": "Yahoo"
+    "url": "https://www.youtube.com/",
+    "title": "Youtube"
+  },
+  {
+    "url": "http://ctrip.com",
+    "title": "CTrip"
   },
   {
     "url": "https://www.expedia.com.sg",
@@ -171,16 +171,16 @@
     "title": "Pizzahut"
   },
   {
-    "url": "https://web.telegram.org/z/",
-    "title": "Telegram"
-  },
-  {
     "url": "https://calendar.google.com",
     "title": "Calendar"
   },
   {
     "url": "https://sheets.google.com",
     "title": "Sheets"
+  },
+  {
+    "url": "https://web.telegram.org/z/",
+    "title": "Telegram"
   },
   {
     "url": "http://captive.apple.com/hotspot-detect.html",

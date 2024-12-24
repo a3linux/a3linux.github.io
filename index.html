@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>A3Linux Home Portal</title>
-    <meta name="description" content="HomeCloud - Quick Bookmark" />
-    <!-- Link to Bootstrap CSS -->
+    <title>HomeCloud</title>
+    <meta name="description" content="HomeCloud - Quick Bookmarks" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
 .btn img {
   width: 64px;
   min-width: 48px;
-  margin-right: 10px;
+  margin: 5px;
 }
     </style>
   </head>
@@ -35,7 +34,15 @@
       </div>
     </div>
 
-    <!-- Embed JavaScript directly into the HTML file -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">a3linux.com</a></li>-->
+        </ul>
+      <p class="text-center text-muted">© 2024 a3linux.com</p>
+      </footer>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         fetch('bookmarks.json')
@@ -44,7 +51,7 @@
             const urlList = document.getElementById('url-list');
             data.forEach(item => {
               const urlItem = document.createElement('a');
-              urlItem.className = "btn btn-outlined btn-none btn-lg"
+              urlItem.className = "btn btn-secondary btn-lg"
               urlItem.href = item.url;
               urlItem.title = item.title;
               urlItem.alt = item.title;
@@ -79,7 +86,6 @@
           .catch(error => console.error('Error loading JSON:', error));
       });
     </script>
-    <!-- Link to Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
