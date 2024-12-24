@@ -1,230 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>A3Linux Home Portal</title>
-  <meta name="description" content="HomeCloud - Quick Bookmark" />
-  <meta name="author" content="SitePoint" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <style>
-    .btn {
-      letter-spacing: 1px;
-      text-decoration: none;
-      background: none;
-      -moz-user-select: none;
-      background-image: none;
-      border: 0px solid transparent;
-      border-radius: 0;
-      cursor: pointer;
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
-      white-space: nowrap;
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: 800;
-      text-transform: uppercase;
-      padding: 2px 4px;
-      margin: 10px;
-    }
-
-    .btn-outlined img {
-      margin: 0px;
-      padding: 0px;
-      display: block;
-      width: 128px;
-      max-height: 64px;
-    }
-
-    .btn-outlined {
-      border-radius: 0;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-    }
-
-    .btn-outlined.btn-blue {
-      background: none;
-      color: #2288ff;
-      border-color: #2288ff;
-    }
-
-    .btn-outlined.btn-none {
-      border: 0px;
-    }
-
-    .btn-outlined.btn-none:hover,
-    .btn-outlined.btn-none:active {
-      color: #fff;
-      background: #444;
-      border-color: #444;
-    }
-
-    .btn-outlined.btn-blue:hover,
-    .btn-outlined.btn-blue:active {
-      color: #ffffff;
-      background: #7788ff;
-      border-color: #7788ff;
-    }
-
-    .btn-outlined.btn-yellow {
-      background: none;
-      color: #c2b507;
-      border-color: #c2b507;
-    }
-
-    .btn-outlined.btn-yellow:hover,
-    .btn-outlined.btn-yellow:active {
-      color: #ffffff;
-      background: #cbc804;
-      border-color: #cbc804;
-    }
-
-    .btn-outlined.btn-cyan {
-      background: none;
-      color: #0077bb;
-      border-color: #0077bb;
-    }
-
-    .btn-outlined.btn-cyan:hover,
-    .btn-outlined.btn-cyan:active {
-      color: #ffffff;
-      background: #4477bb;
-      border-color: #4477bb;
-    }
-
-    .btn-outlined.btn-green {
-      background: none;
-      color: #007700;
-      border-color: #007700;
-    }
-
-    .btn-outlined.btn-green:hover,
-    .btn-outlined.btn-green:active {
-      color: #ffffff;
-      background: #447700;
-      border-color: #447700;
-    }
-
-    .btn-lg {
-      font-size: 18px;
-      line-height: 20px;
-      border: 1px dashed;
-      padding: 16px;
-    }
-
-    .btn-outlined img {
-      width: 92px;
-      padding: 0px;
-      margin: 0px;
-    }
-
-    a img {
-      margin: 2px;
-      width: 32px;
-      padding: 2px;
-    }
-  </style>
-</head>
-
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <form method="get" action="https://www.google.com/search">
-        <input class="form-control" type="text" name="q" size="64" maxlength="255" value=""
-          placeholder="Google Search..." autofocus />
-      </form>
-    </div>
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <form method="get" id="search" action="https://duckduckgo.com/">
-        <input class="form-control" type="text" name="q" maxlength="300" placeholder="DuckDuckGo Search .."/>
-      </form>
-    </div>
-  </nav>
-  <div class="container-fluid bg-light">
-    <div class="row">
-      <div class="col-12">
-        <a target="_blank" href="https://home.a3linux.com" class="btn btn-outlined btn-none btn-lg" title="HomeCloud"><img src="imgs/a3linux-nextcloud.png" alt="HomeCloud"></img></a>
-        <a target="_blank" href="https://www.a3linux.com" class="btn btn-outlined btn-none btn-lg" title="a3linux.com"><img src="imgs/logo_h.png" alt="A3Linux.com"></img></a>
-        <a target="_blank" href="https://books.a3linux.com/" class="btn btn-outlined btn-none btn-lg" title="eLibrary"><img src="imgs/calibre.png" alt="Books"></img></a>
-        <a target="_blank" href="https://video.a3linux.com/" class="btn btn-outlined btn-none btn-lg" title="Videos"><img src="imgs/jellyfin.png" alt="Jellyfin"></img></a>
-        <a target="_blank" href="https://a3linux.betteruptime.com" class="btn btn-outlined btn-none btn-lg" title="Status"><img src="https://betterstack.com/assets/v2/homepage/consolidate-stack-cfed8f800c51838e05606c51972a0f15ec04e753af5d233d2fab2c447809ad8c.jpg" alt="BetterStack"></img></a>
-        <a target="_blank" href="https://a3linux.slack.com" class="btn btn-outlined btn-none btn-lg" title="a3linux.slack.com"><img src="https://a.slack-edge.com/3d92b39/marketing/img/nav/slack-salesforce-logo-nav-white.png" alt="a3linux.slack.com"></img></a>
-        <a target="_blank" href="https://github.com/a3linux?tab=repositories" class="btn btn-outlined btn-none btn-lg" title="Github"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></img></a>
-      </div>
-      <div class="col-12">
-        <a target="_blank" href="https://mail.google.com/" class="btn btn-outlined btn-none btn-lg" title="GMail"><img src="imgs/gmail.png" alt="GMail"></img></a>
-        <a target="_blank" href="https://chat.openai.com" class="btn btn-outlined btn-none btn-lg" title="ChatGPT"><img src="imgs/chatgpt.png" alt="ChatGPT"></img></a>
-        <a target="_blank" href="https://bard.google.com/" class="btn btn-outlined btn-none btn-lg" title="Bard"><img src="imgs/bard.png" alt="Bard"></img></a>
-        <a target="_blank" href="https://drive.google.com/drive/my-drive?ths=true" class="btn btn-outlined btn-none btn-lg" title="Google Drive"><img src="imgs/gdrive.png" alt="Google Drive"></img></a>
-        <a target="_blank" href="https://maps.google.com/" class="btn btn-outlined btn-none btn-lg" title="Google Maps"><img src="imgs/gmaps.png" alt="Google Maps"></img></a>
-        <a target="_blank" href="https://web.whatsapp.com" class="btn btn-outlined btn-none btn-lg" title="WhatsApp WEB"><img src="imgs/whatsapp.png" alt="WhatsApp"></img></a>
-      </div>
-      <div class="col-12">
-        <a target="_blank" href="https://us.etrade.com/e/t/user/login" class="btn btn-outlined btn-none btn-lg" title="eTrade"><img src="imgs/etrade.png" alt="eTrade"></img></a>
-        <a target="_blank" href="https://retail.sc.com/sg/nfs/login.htm" class="btn btn-outlined btn-none btn-lg" title="Standard Character Bank"><img src="imgs/sc.png" alt="Standard Character Bank online"></img></a>
-        <a target="_blank" href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action" class="btn btn-outlined btn-none btn-lg" title="Citibank SG"><img src="imgs/citi.png" alt="Citibank SG"></img></a>
-        <a target="_blank" href="https://internet-banking.dbs.com.sg/IB/Welcome" class="btn btn-outlined btn-none btn-lg" title="DBS iBanking"><img src="imgs/dbs.png" alt="DBS iBanking"></img></a>
-        <a target="_blank" href="https://myebank.icbc.com.cn/icbc/perbank/index.jsp?areaCode=0103&dse_locale=zh-CN" class="btn btn-outlined btn-none btn-lg" title="ICBC 工商银行(新加坡)"><img src="imgs/icbc.png" alt="ICBC工商银行新加坡分行网银"></img></a>
-        <a target="_blank" href="https://www.paypal.com/signin" class="btn btn-outlined btn-none btn-lg" title="PayPal"><img src="imgs/paypal.png" alt="Paypal"></img></a>
-      </div>
-      <div class="col-12">
-        <a target="_blank" href="https://viewqwest.com/sg/" class="btn btn-outlined btn-none btn-lg" title="ViewQWest"><img src="https://customerportal.viewqwest.com/static/media/vq-logo.fc610fff24eaff5081f5a43375ef8db7.svg" alt="ViewQWest"></img></a>
-        <a target="_blank" href="https://onepass.singtel.com/sso/login/?flowId=131c893b-3817-408e-9628-45debdea4fbd&targetUrl=https://www.singtel.com/personal/my-account/manage-accounts/account-summary" class="btn btn-outlined btn-none btn-lg" title="Singtel"><img src="imgs/singtel.png" alt="SingTel"></img></a>
-        <a target="_blank" href="https://mytax.iras.gov.sg/ESVWeb/default.aspx?target=MPORLoginSelectionPage" class="btn btn-outlined btn-none btn-lg" title="IRAS Tax Portal"><img src="imgs/iras.png" alt="IRAS Tax Portal"></img></a>
-        <a target="_blank" href="https://www.cpf.gov.sg/member/login/qr-code" class="btn btn-outlined btn-none btn-lg" title="CPF"><img src="imgs/cpf.png" alt="CPF"></img></a>
-        <a target="_blank" href="https://eservices.ica.gov.sg/icsbip" class="btn btn-outlined btn-none btn-lg" title="ICA"><img src="imgs/ica.png" alt="ica"></img></a>
-        <a target="_blank" href="https://me.income.com.sg/summary/life" class="btn btn-outlined btn-none btn-lg" title="NTUC Income"><img src="imgs/income.png" alt="NTUC Income"></img></a>
-        <a target="_blank" href="https://www.aoncare.sg/" class="btn btn-outlined btn-none btn-lg" title="AonCare"><img src="https://www.aoncare.sg/aoncare/media/aoncare/Aoncare_logo_144x35.png?ext=.png" alt=""></img></a>
-      </div>
-      <div class="col-12">
-        <a target="_blank" href="https://facebook.com/" class="btn btn-outlined btn-none btn-lg" title="Facebook"><img src="imgs/facebook.png" alt="Facebook"></img></a>
-        <a target="_blank" href="https://twitter.com/" class="btn btn-outlined btn-none btn-lg" title="Twitter"><img src="imgs/twitter.png" alt="Twitter"></img></a>
-        <a target="_blank" href="https://www.youtube.com/" class="btn btn-outlined btn-none btn-lg" title="YouTube"><img src="imgs/youtube.png" alt="YouTube"></img></a>
-        <a target="_blank" href="http://www.jd.com/" class="btn btn-outlined btn-none btn-lg" title="京东商城"><img src="imgs/jd.png" alt="京东商城"></img></a>
-        <a target="_blank" href="http://world.taobao.com/" class="btn btn-outlined btn-none btn-lg" title="淘宝"><img src="imgs/taobao.png" alt="淘宝"></img></a>
-        <a target="_blank" href="http://www.lazada.sg/" class="btn btn-outlined btn-none btn-lg" title="Lazada"><img src="imgs/lazada.png" alt="Lazada"></img></a>
-        <a target="_blank" href="http://www.amazon.sg/" class="btn btn-outlined btn-none btn-lg" title="Amazon"><img src="imgs/amazonsg.png" alt="Amazon"></img></a>
-        <a target="_blank" href="http://ctrip.com" class="btn btn-outlined btn-none btn-lg" title="CTrip"><img src="https://ak-s.tripcdn.com/modules/nfes/pc-home/logo.dea30d575d812c738b4683ba80f3ff84.png"></img></a>
-      </div>
-      <div class="col-12">
-        <a target="_blank" href="https://www.straitstimes.com/" class="btn btn-outlined btn-yellow btn-lg" title="Straits Times">Straits Times</a>
-        <a target="_blank" href="https://finance.yahoo.com/" class="btn btn-outlined btn-blue btn-lg" title="Finance - Yahoo">Finance Yahoo</a>
-        <a target="_blank" href="https://www.straitstimes.com/invest" class="btn btn-outlined btn-blue btn-lg" title="Straits Times Invest Channel">ST Invest</a>
-        <a target="_blank" href="https://www.expedia.com.sg" class="btn btn-outlined btn-yellow btn-lg" title="Expedia">Expedia</a>
-        <a target="_blank" href="https://www.klook.com/en-SG" class="btn btn-outlined btn-yellow btn-lg" title="KLook">KLook</a>
-        <a target="_blank" href="https://sg.trip.com/?locale=en_sg" class="btn btn-outlined btn-yellow btn-lg" title="Trip.com">Trip.com</a>
-        <a target="_blank" href="https://food.grab.com/sg/en/" class="btn btn-outlined btn-cyan btn-lg" title="GrabFood">GrabFood</a>
-        <a target="_blank" href="https://www.pizzahut.com.sg/home" class="btn btn-outlined btn-cyan btn-lg" title="PIzzaHut">PizzaHut</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>A3Linux Home Portal</title>
+    <meta name="description" content="HomeCloud - Quick Bookmark" />
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+.btn img {
+  width: 64px;
+  margin-right: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-light">
+      <div class="row">
+        <div id="url-list" class="col-12"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <a target="_blank" href="https://web.whatsapp.com" title="WhatsApp WEB"><img src="imgs/whatsapp.png" alt="WhatsApp"></img></a>
-        <a target="_blank" href="https://web.telegram.org/z/" title="Telegram WEB"><img src="imgs/telegram.png" alt="Telegram"></img></a>
-        <a target="_blank" href="https://web.wechat.com/?lang=en" title="WeChat WEB 微信"><img src="imgs/wechat.png" alt="微信"></img></a>
-        <a target="_blank" href="https://calendar.google.com" title="Google Calendar"><img src="imgs/gcal.png" alt="Google Calendar"></img></a>
-        <a target="_blank" href="https://sheets.google.com" title="Google Sheets"><img src="imgs/gsheets.png" alt="Google Sheets"></img></a>
-        <a target="_blank" href="https://docs.google.com" title="Google Docs"><img src="imgs/gdocs.png" alt="Google Docs"></img></a>
-        <a target="_blank" href="https://www.evernote.com/client/web?login=true" title="Evernote"><img src="imgs/evernote.png" alt="Evernote"></img></a>
-        <a target="_blank" href="http://captive.apple.com/hotspot-detect.html">&nbsp;WIFI</a>
-      </div>
-    </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-</body>
+
+    <!-- Embed JavaScript directly into the HTML file -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch('bookmarks.json')
+          .then(response => response.json())
+          .then(data => {
+            const urlList = document.getElementById('url-list');
+            data.forEach(item => {
+              const urlItem = document.createElement('a');
+              urlItem.className = "btn btn-outlined btn-none btn-lg"
+              urlItem.href = item.url;
+              urlItem.title = item.title;
+              urlItem.alt = item.title;
+              urlItem.target = "_blank"
+
+              const favicon = document.createElement('img');
+              if (item.hasOwnProperty("favicon")) {
+                favicon.src = item.favicon;
+              } else {
+                favicon.src = `https://www.google.com/s2/favicons?domain_url=${item.url}&sz=64`;
+              }
+              favicon.alt = item.title;
+              favicon.title = item.title;
+
+              const linkText = document.createElement('span');
+              linkText.textContent = ''; // Hide URL text by default
+
+              favicon.onerror = () => {
+                // Display title if the favicon fails to load
+                linkText.textContent = item.title;
+              };
+
+              favicon.onload = () => {
+                // If favicon loads successfully, append it
+                urlItem.appendChild(favicon);
+              };
+
+              urlItem.appendChild(linkText);
+              urlList.appendChild(urlItem);
+            });
+          })
+          .catch(error => console.error('Error loading JSON:', error));
+      });
+    </script>
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

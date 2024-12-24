@@ -1,0 +1,189 @@
+[
+  {
+    "url": "https://home.a3linux.com/",
+    "title": "NextCloud",
+    "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
+  },
+  {
+    "url": "https://www.a3linux.com/",
+    "title": "Web"
+  },
+  {
+    "url": "https://books.a3linux.com/",
+    "title": "Library",
+    "favicon": "https://a3linux.github.io/imgs/calibre.png"
+  },
+  {
+    "url": "https://video.a3linux.com/",
+    "title": "Jellyfin"
+  },
+  {
+    "url": "https://a3linux.betteruptime.com/",
+    "title": "Avalibility"
+  },
+  {
+    "url": "https://a3linux.slack.com/",
+    "title": "Slack",
+    "favicon": "https://a.slack-edge.com/cebaa/img/ico/favicon.ico"
+  },
+  {
+    "url": "https://github.com/a3linux/",
+    "title": "GitHub"
+  },
+  {
+    "url": "https://mail.google.com/",
+    "title": "GMail"
+  },
+  {
+    "url": "https://chat.openai.com/",
+    "title": "ChatGPT"
+  },
+  {
+    "url": "https://bard.google.com/",
+    "title": "Bard"
+  },
+  {
+    "url": "https://drive.google.com/drive/my-drive",
+    "title": "Google Driver"
+  },
+  {
+    "url": "https://maps.google.com/",
+    "title": "Maps"
+  },
+  {
+    "url": "https://web.whatsapp.com",
+    "title": "WhatsApp"
+  },
+  {
+    "url": "https://us.etrade.com/e/t/user/login",
+    "title": "ETrade"
+  },
+  {
+    "url": "https://retail.sc.com/sg/nfs/login.htm",
+    "title": "SC",
+    "favicon": "https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.png"
+  },
+  {
+    "url": "https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action",
+    "title": "Citi"
+  },
+  {
+    "url": "https://internet-banking.dbs.com.sg/IB/Welcome",
+    "title": "DBS"
+  },
+  {
+    "url": "https://myebank.icbc.com.cn/icbc/perbank/index.jsp?areaCode=0103&dse_locale=zh-CN",
+    "title": "ICBC",
+    "favicon": "https://a3linux.github.io/imgs/icbc.png"
+  },
+  {
+    "url": "https://www.paypal.com/signin",
+    "title": "PayPal"
+  },
+  {
+    "url": "https://viewqwest.com/sg/",
+    "title": "VieQWest"
+  },
+  {
+    "url": "https://onepass.singtel.com/sso/login/",
+    "title": "Singtel"
+  },
+  {
+    "url": "https://mytax.iras.gov.sg/ESVWeb/default.aspx",
+    "title": "IRAS"
+  },
+  {
+    "url": "https://www.cpf.gov.sg/member/login/qr-code",
+    "title": "CPF"
+  },
+  {
+    "url": "https://eservices.ica.gov.sg/",
+    "title": "ICA",
+    "favicon": "https://www.ica.gov.sg/Cwp/assets/ica/images/logo/ica_logo_new.svg"
+  },
+  {
+    "url": "https://me.income.com.sg/",
+    "title": "INCOME",
+    "favicon": "https://www.income.com.sg/assets/images/icons/logo-income.svg"
+  },
+  {
+    "url": "https://www.aoncare.sg/",
+    "title": "AON CARE"
+  },
+  {
+    "url": "https://facebook.com/",
+    "title": "Facebook"
+  },
+  {
+    "url": "https://twitter.com/",
+    "title": "X"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "Youtube"
+  },
+  {
+    "url": "http://www.jd.com/",
+    "title": "JD"
+  },
+  {
+    "url": "http://world.taobao.com/",
+    "title": "Taobao"
+  },
+  {
+    "url": "http://www.lazada.sg/",
+    "title": "Lazada"
+  },
+  {
+    "url": "http://www.amazon.sg/",
+    "title": "AmazonSG"
+  },
+  {
+    "url": "http://ctrip.com",
+    "title": "CTrip"
+  },
+  {
+    "url": "https://www.straitstimes.com/",
+    "title": "ST"
+  },
+  {
+    "url": "https://finance.yahoo.com/",
+    "title": "Yahoo"
+  },
+  {
+    "url": "https://www.expedia.com.sg",
+    "title": "Expedia"
+  },
+  {
+    "url": "https://www.klook.com/en-SG",
+    "title": "KLook"
+  },
+  {
+    "url": "https://sg.trip.com/",
+    "title": "Trip.com"
+  },
+  {
+    "url": "https://food.grab.com/sg/en/",
+    "title": "GrabFood"
+  },
+  {
+    "url": "https://www.pizzahut.com.sg/home/",
+    "title": "Pizzahut"
+  },
+  {
+    "url": "https://web.telegram.org/z/",
+    "title": "Telegram"
+  },
+  {
+    "url": "https://calendar.google.com",
+    "title": "Calendar"
+  },
+  {
+    "url": "https://sheets.google.com",
+    "title": "Sheets"
+  },
+  {
+    "url": "http://captive.apple.com/hotspot-detect.html",
+    "title": "WIFI"
+  }
+]

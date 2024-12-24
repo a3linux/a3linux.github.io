@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Personal portal page | a3linux.github.io</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Personal portal page" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Allen’s pages" />
-<meta property="og:description" content="Allen’s pages" />
-<link rel="canonical" href="http://a3linux.github.io/" />
-<meta property="og:url" content="http://a3linux.github.io/" />
-<meta property="og:site_name" content="a3linux.github.io" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Personal portal page" />
-
-<script data-ad-client="ca-pub-3505640113321967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<script type="application/ld+json">
-{"description":"Allen’s pages","url":"http://a3linux.github.io/","headline":"Personal portal page","@type":"WebSite","name":"a3linux.github.io","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=713692294236fa5a2535514ec54a37da5fb18fb0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>A3Linux Home Portal</title>
+    <meta name="description" content="HomeCloud - Quick Bookmark" />
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+.btn img {
+  width: 64px;
+  margin-right: 10px;
+}
+    </style>
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      <h1 id="personal-portal-page">Personal portal page</h1>
+    <div class="container-fluid bg-light">
+      <div class="row">
+        <div id="url-list" class="col-12"></div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
+
+    <!-- Embed JavaScript directly into the HTML file -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch('bookmarks.json')
+          .then(response => response.json())
+          .then(data => {
+            const urlList = document.getElementById('url-list');
+            data.forEach(item => {
+              const urlItem = document.createElement('a');
+              urlItem.className = "btn btn-outlined btn-none btn-lg"
+              urlItem.href = item.url;
+              urlItem.title = item.title;
+              urlItem.alt = item.title;
+              urlItem.target = "_blank"
+
+              const favicon = document.createElement('img');
+              if (item.hasOwnProperty("favicon")) {
+                favicon.src = item.favicon;
+              } else {
+                favicon.src = `https://www.google.com/s2/favicons?domain_url=${item.url}&sz=64`;
+              }
+              favicon.alt = item.title;
+              favicon.title = item.title;
+
+              const linkText = document.createElement('span');
+              linkText.textContent = ''; // Hide URL text by default
+
+              favicon.onerror = () => {
+                // Display title if the favicon fails to load
+                linkText.textContent = item.title;
+              };
+
+              favicon.onload = () => {
+                // If favicon loads successfully, append it
+                urlItem.appendChild(favicon);
+              };
+
+              urlItem.appendChild(linkText);
+              urlList.appendChild(urlItem);
+            });
+          })
+          .catch(error => console.error('Error loading JSON:', error));
+      });
+    </script>
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
