@@ -109,6 +109,10 @@
     "title": "Singtel"
   },
   {
+    "url": "https://eight.com.sg/",
+    "title": "Eight"
+  },
+  {
     "url": "https://mytax.iras.gov.sg/ESVWeb/default.aspx",
     "title": "IRAS"
   },
@@ -155,6 +159,10 @@
     "title": "CTrip"
   },
   {
+    "url": "https://www.wahdah.my",
+    "title": "WAHDAH MY"
+  },
+  {
     "url": "https://www.expedia.com.sg",
     "title": "Expedia"
   },
@@ -181,6 +189,10 @@
   {
     "url": "https://sheets.google.com",
     "title": "Sheets"
+  },
+  {
+    "url": "https://starhub.com/",
+    "title": "StarHub"
   },
   {
     "url": "https://web.telegram.org/z/",
