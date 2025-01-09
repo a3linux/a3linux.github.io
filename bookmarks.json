@@ -4,6 +4,10 @@
     "title": "GMail"
   },
   {
+    "url": "https://maps.google.com/",
+    "title": "Maps"
+  },
+  {
     "url": "https://home.a3linux.com/",
     "title": "NextCloud",
     "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
@@ -43,20 +47,12 @@
     "title": "ChatGPT"
   },
   {
-    "url": "https://bard.google.com/",
-    "title": "Bard"
+    "url": "https://gemini.google.com/",
+    "title": "Gemini"
   },
   {
     "url": "https://finance.yahoo.com/",
     "title": "Yahoo"
-  },
-  {
-    "url": "https://drive.google.com/drive/my-drive",
-    "title": "Google Driver"
-  },
-  {
-    "url": "https://maps.google.com/",
-    "title": "Maps"
   },
   {
     "url": "http://world.taobao.com/",
@@ -183,16 +179,20 @@
     "title": "Pizzahut"
   },
   {
+    "url": "https://drive.google.com/drive/my-drive",
+    "title": "Google Driver"
+  },
+  {
     "url": "https://calendar.google.com",
     "title": "Calendar"
   },
   {
     "url": "https://sheets.google.com",
-    "title": "Sheets"
+    "title": "Google Sheets"
   },
   {
-    "url": "https://starhub.com/",
-    "title": "StarHub"
+    "url": "https://docs.google.com",
+    "title": "Google Docs"
   },
   {
     "url": "https://web.telegram.org/z/",
