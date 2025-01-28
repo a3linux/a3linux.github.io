@@ -199,6 +199,14 @@
     "title": "Telegram"
   },
   {
+    "url": "https://www.cloudflare.com/",
+    "title": "Cloudflare"
+  },
+  {
+    "url": "https://www.zerossl.com/",
+    "title": "ZeroSSL"
+  },
+  {
     "url": "http://captive.apple.com/hotspot-detect.html",
     "title": "WIFI"
   }
