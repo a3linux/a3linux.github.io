@@ -51,10 +51,6 @@
     "title": "Gemini"
   },
   {
-    "url": "https://finance.yahoo.com/",
-    "title": "Yahoo"
-  },
-  {
     "url": "http://world.taobao.com/",
     "title": "Taobao"
   },
@@ -177,6 +173,18 @@
   {
     "url": "https://www.pizzahut.com.sg/home/",
     "title": "Pizzahut"
+  },
+  {
+    "url": "https://finance.yahoo.com/",
+    "title": "Yahoo"
+  },
+  {
+    "url": "https://seekingalpha.com",
+    "title": "Alpha Picks"
+  },
+  {
+    "url": "https://investing.com",
+    "title": "Investing"
   },
   {
     "url": "https://drive.google.com/drive/my-drive",
