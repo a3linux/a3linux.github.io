@@ -51,20 +51,24 @@
     "title": "Gemini"
   },
   {
-    "url": "http://world.taobao.com/",
+    "url": "https://world.taobao.com/",
     "title": "Taobao"
   },
   {
-    "url": "http://www.lazada.sg/",
-    "title": "Lazada"
-  },
-  {
-    "url": "http://jd.com/",
+    "url": "https://jd.com/",
     "title": "JD"
   },
   {
-    "url": "http://www.amazon.sg/",
+    "url": "https://www.lazada.sg/",
+    "title": "Lazada"
+  },
+  {
+    "url": "https://www.amazon.sg/",
     "title": "AmazonSG"
+  },
+  {
+    "url": "https://shopee.sg/",
+    "title": "Shopee"
   },
   {
     "url": "https://us.etrade.com/e/t/user/login",
