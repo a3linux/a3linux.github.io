@@ -43,12 +43,16 @@
     "title": "GitHub"
   },
   {
-    "url": "https://chat.openai.com/",
-    "title": "ChatGPT"
+    "url": "https://grok.com",
+    "title": "Grok"
   },
   {
     "url": "https://gemini.google.com/",
     "title": "Gemini"
+  },
+  {
+    "url": "https://chat.openai.com/",
+    "title": "ChatGPT"
   },
   {
     "url": "https://world.taobao.com/",
