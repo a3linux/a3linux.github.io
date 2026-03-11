@@ -83,6 +83,10 @@
     "title": "ETrade"
   },
   {
+    "url": "https://www.interactivebrokers.com.sg/sso/Login?RL=1&locale=en_US",
+    "title": "IBRK Online Portal"
+  },
+  {
     "url": "https://retail.sc.com/sg/nfs/login.htm",
     "title": "SC",
     "favicon": "https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.png"
