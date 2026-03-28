@@ -8,13 +8,37 @@
     "title": "Maps"
   },
   {
-    "url": "https://home.a3linux.com/",
-    "title": "NextCloud",
-    "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
-  },
-  {
     "url": "https://web.whatsapp.com",
     "title": "WhatsApp"
+  },
+  {
+    "url": "https://claude.ai/recents",
+    "title": "Claude"
+  },
+  {
+    "url": "https://grok.com",
+    "title": "Grok"
+  },
+  {
+    "url": "https://gemini.google.com/",
+    "title": "Gemini"
+  },
+  {
+    "url": "https://chat.openai.com/",
+    "title": "ChatGPT"
+  },
+  {
+    "url": "https://facebook.com/",
+    "title": "Facebook"
+  },
+  {
+    "url": "https://twitter.com/",
+    "title": "X"
+  },
+  {
+    "url": "https://home.a3linux.com/",
+    "title": "HomeCloud",
+    "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
   },
   {
     "url": "https://www.a3linux.com/",
@@ -34,29 +58,13 @@
     "title": "Avalibility"
   },
   {
-    "url": "https://a3linux.slack.com/",
-    "title": "Slack",
-    "favicon": "https://a.slack-edge.com/cebaa/img/ico/favicon.ico"
-  },
-  {
     "url": "https://github.com/a3linux/",
     "title": "GitHub"
   },
   {
-    "url": "https://claude.ai/recents",
-    "title": "Claude"
-  },
-  {
-    "url": "https://grok.com",
-    "title": "Grok"
-  },
-  {
-    "url": "https://gemini.google.com/",
-    "title": "Gemini"
-  },
-  {
-    "url": "https://chat.openai.com/",
-    "title": "ChatGPT"
+    "url": "https://a3linux.slack.com/",
+    "title": "Slack",
+    "favicon": "https://a.slack-edge.com/cebaa/img/ico/favicon.ico"
   },
   {
     "url": "https://world.taobao.com/",
@@ -149,14 +157,6 @@
   {
     "url": "https://www.aoncare.sg/",
     "title": "AON CARE"
-  },
-  {
-    "url": "https://facebook.com/",
-    "title": "Facebook"
-  },
-  {
-    "url": "https://twitter.com/",
-    "title": "X"
   },
   {
     "url": "https://www.nlb.gov.sg/",
