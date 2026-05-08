@@ -12,7 +12,7 @@
   {
     "url": "https://web.whatsapp.com",
     "title": "WhatsApp",
-    "keywords": ["socail", "whatsapp", "chat", "im"]
+    "keywords": ["social", "whatsapp", "chat", "im"]
   },
   {
     "url": "https://claude.ai/recents",
@@ -68,8 +68,8 @@
   },
   {
     "url": "https://a3linux.betteruptime.com/",
-    "title": "Avalibility",
-    "keywords": ["homecloud", "availibility"]
+    "title": "Availability",
+    "keywords": ["homecloud", "availability"]
   },
   {
     "url": "https://github.com/a3linux/",
@@ -126,7 +126,7 @@
     "url": "https://retail.sc.com/sg/nfs/login.htm",
     "title": "SC",
     "favicon": "https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.png",
-    "keywords": ["finance", "sc", "standard character", "bank", "sg"]
+    "keywords": ["finance", "sc", "standard chartered", "bank", "sg"]
   },
   {
     "url": "https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action",
@@ -160,7 +160,7 @@
     "keywords": ["telecom", "singtel"]
   },
   {
-    "url": "http://family.vivifi.me/",
+    "url": "https://family.vivifi.me/",
     "title": "VIVIFI",
     "keywords": ["telecom", "vivifi", "mobile"]
   },
@@ -189,12 +189,12 @@
     "url": "https://me.income.com.sg/",
     "title": "INCOME",
     "favicon": "https://www.income.com.sg/assets/images/icons/logo-income.svg",
-    "keywords": ["finance", "income", "sg", "insurrance"]
+    "keywords": ["finance", "income", "sg", "insurance"]
   },
   {
     "url": "https://www.aoncare.sg/",
     "title": "AON CARE",
-    "keywords": ["finance", "anoncare", "sg", "insurrance"]
+    "keywords": ["finance", "anoncare", "sg", "insurance"]
   },
   {
     "url": "https://www.nlb.gov.sg/",
@@ -204,7 +204,7 @@
   {
     "url": "https://www.youtube.com/",
     "title": "Youtube",
-    "keywords": ["youtube", "entitlement", "videos", "google"]
+    "keywords": ["youtube", "entertainment", "videos", "google"]
   },
   {
     "url": "https://agoda.com/",
@@ -212,7 +212,7 @@
     "keywords": ["travel", "agent", "agoda", "online", "sg"]
   },
   {
-    "url": "http://ctrip.com",
+    "url": "https://ctrip.com",
     "title": "CTrip",
     "keywords": ["travel", "agent", "ctrip", "online", "cn"]
   },
@@ -258,8 +258,8 @@
   },
   {
     "url": "https://drive.google.com/drive/my-drive",
-    "title": "Google Driver",
-    "keywords": ["google", "driver", "file"]
+    "title": "Google Drive",
+    "keywords": ["google", "drive", "file"]
   },
   {
     "url": "https://calendar.google.com",

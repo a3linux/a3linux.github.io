@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HomeCloud</title>
     <meta name="description" content="HomeCloud - Quick Bookmarks" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -41,6 +41,9 @@
         border: none;
         border-radius: 8px;
         box-shadow: var(--card-shadow);
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
       }
 
       .bookmark-card:hover {
@@ -59,12 +62,6 @@
         margin: 1rem auto;
       }
 
-      .bookmark-card {
-        width: 64px;
-        height: 64px;
-        flex-shrink: 0;
-      }
-
       .bookmark-card .card-body {
         padding: 4px;
         width: 100%;
@@ -73,6 +70,12 @@
 
       #theme-toggle {
         cursor: pointer;
+      }
+
+      #url-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
       }
     </style>
   </head>
@@ -86,7 +89,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
-              <button id="theme-toggle" class="btn btn-outline-light ml-lg-3">🌓 Toggle Theme</button>
+              <button id="theme-toggle" class="btn btn-outline-light ml-lg-3" aria-label="Toggle dark theme">🌓 Toggle Theme</button>
             </li>
           </ul>
         </div>
@@ -95,15 +98,16 @@
 
     <div class="container">
       <div class="search-container">
+        <label for="filter-input" class="sr-only">Search bookmarks</label>
         <input type="text" id="filter-input" class="form-control form-control-lg shadow-sm" placeholder="Search your bookmarks..." autofocus />
       </div>
 
-      <div id="url-list" style="display:flex; flex-wrap:wrap; gap:6px;">
+      <div id="url-list">
         <!-- Bookmarks will be injected here -->
       </div>
 
       <footer class="py-5 mt-5 text-center text-muted">
-        <p>© 2024 a3linux.com</p>
+        <p>© <script>document.write(new Date().getFullYear())</script> a3linux.com</p>
       </footer>
     </div>
 
@@ -139,7 +143,10 @@
             bookmarks = data;
             renderBookmarks(bookmarks);
           })
-          .catch(error => console.error('Error loading JSON:', error));
+          .catch(error => {
+            console.error('Error loading JSON:', error);
+            urlList.innerHTML = '<p class="text-danger w-100 text-center">Failed to load bookmarks.</p>';
+          });
 
         // Filter functionality
         filterInput.addEventListener('input', (e) => {
@@ -152,13 +159,25 @@
           renderBookmarks(filtered);
         });
 
+        filterInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            filterInput.value = '';
+            renderBookmarks(bookmarks);
+          }
+        });
+
         function renderBookmarks(items) {
           urlList.innerHTML = '';
+          if (items.length === 0) {
+            urlList.innerHTML = '<p class="text-muted w-100 text-center">No bookmarks found.</p>';
+            return;
+          }
           items.forEach(item => {
             const card = document.createElement('a');
             card.className = 'card text-decoration-none shadow-sm bookmark-card';
             card.href = item.url;
             card.target = '_blank';
+            card.rel = 'noopener noreferrer';
             card.title = item.title;
 
             const cardBody = document.createElement('div');
@@ -172,6 +191,8 @@
               img.src = `https://www.google.com/s2/favicons?domain_url=${item.url}&sz=64`;
             }
             img.alt = item.title;
+            img.loading = 'lazy';
+            img.onerror = () => { img.src = 'favicon.png'; };
 
             cardBody.appendChild(img);
             card.appendChild(cardBody);
