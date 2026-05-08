@@ -1,250 +1,310 @@
 [
   {
     "url": "https://mail.google.com/",
-    "title": "GMail"
+    "title": "GMail",
+    "keywords": ["gmail", "google", "mail"]
   },
   {
     "url": "https://maps.google.com/",
-    "title": "Maps"
+    "title": "Maps",
+    "keywords": ["map", "google"]
   },
   {
     "url": "https://web.whatsapp.com",
-    "title": "WhatsApp"
+    "title": "WhatsApp",
+    "keywords": ["socail", "whatsapp", "chat", "im"]
   },
   {
     "url": "https://claude.ai/recents",
-    "title": "Claude"
+    "title": "Claude",
+    "keywords": ["AI", "claude", "chat"]
   },
   {
     "url": "https://grok.com",
-    "title": "Grok"
+    "title": "Grok",
+    "keywords": ["AI", "x", "chat", "grok"]
   },
   {
     "url": "https://gemini.google.com/",
-    "title": "Gemini"
+    "title": "Gemini",
+    "keywords": ["AI", "google", "chat", "gemini"]
   },
   {
     "url": "https://chat.openai.com/",
-    "title": "ChatGPT"
+    "title": "ChatGPT",
+    "keywords": ["AI", "openai", "chat", "chatgpt"]
   },
   {
     "url": "https://facebook.com/",
-    "title": "Facebook"
+    "title": "Facebook",
+    "keywords": ["social", "meta", "facebook", "fb"]
   },
   {
     "url": "https://twitter.com/",
-    "title": "X"
+    "title": "X",
+    "keywords": ["social", "X", "twitter"]
   },
   {
     "url": "https://home.a3linux.com/",
     "title": "HomeCloud",
-    "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png"
+    "favicon": "https://a3linux.github.io/imgs/a3linux-nextcloud.png",
+    "keywords": ["homecloud", "cloud", "file", "nextcloud"]
   },
   {
     "url": "https://www.a3linux.com/",
-    "title": "Web"
+    "title": "HomePage",
+    "keywords": ["homecloud", "cloud", "www", "home"]
   },
   {
     "url": "https://books.a3linux.com/",
     "title": "Library",
-    "favicon": "https://a3linux.github.io/imgs/calibre.png"
+    "favicon": "https://a3linux.github.io/imgs/calibre.png",
+    "keywords": ["homecloud", "library", "books", "calibre"]
   },
   {
     "url": "https://video.a3linux.com/",
-    "title": "Jellyfin"
+    "title": "Jellyfin",
+    "keywords": ["homecloud", "videos", "jellyfin"]
   },
   {
     "url": "https://a3linux.betteruptime.com/",
-    "title": "Avalibility"
+    "title": "Avalibility",
+    "keywords": ["homecloud", "availibility"]
   },
   {
     "url": "https://github.com/a3linux/",
-    "title": "GitHub"
+    "title": "GitHub",
+    "keywords": ["a3linux", "github", "repositories"]
   },
   {
     "url": "https://a3linux.slack.com/",
     "title": "Slack",
-    "favicon": "https://a.slack-edge.com/cebaa/img/ico/favicon.ico"
+    "favicon": "https://a.slack-edge.com/cebaa/img/ico/favicon.ico",
+    "keywords": ["slack", "a3linux"]
   },
   {
     "url": "https://world.taobao.com/",
-    "title": "Taobao"
+    "title": "Taobao",
+    "keywords": ["ecom", "taobao", "tb", "shopping", "cn"]
   },
   {
     "url": "https://jd.com/",
-    "title": "JD"
+    "title": "JD",
+    "keywords": ["ecom", "jd", "jindong", "shopping", "cn"]
   },
   {
     "url": "https://www.lazada.sg/",
-    "title": "Lazada"
+    "title": "Lazada",
+    "keywords": ["ecom", "lazada", "lz", "shopping", "sg"]
   },
   {
     "url": "https://www.amazon.sg/",
-    "title": "AmazonSG"
+    "title": "AmazonSG",
+    "keywords": ["ecom", "amazon", "az", "shopping", "sg"]
   },
   {
     "url": "https://shopee.sg/",
-    "title": "Shopee"
+    "title": "Shopee",
+    "keywords": ["ecom", "shopee", "shopping", "sg"]
   },
   {
     "url": "https://shop.redmanshop.com",
-    "title": "REDMAN"
+    "title": "REDMAN",
+    "keywords": ["ecom", "redmart", "shopping", "sg", "baking"]
   },
   {
     "url": "https://us.etrade.com/e/t/user/login",
-    "title": "ETrade"
+    "title": "ETrade",
+    "keywords": ["finance", "etrade", "money"]
   },
   {
     "url": "https://www.interactivebrokers.com.sg/sso/Login?RL=1&locale=en_US",
-    "title": "IBRK Online Portal"
+    "title": "IBRK Online Portal",
+    "keywords": ["finance", "ibkr", "interactivebrokers"]
   },
   {
     "url": "https://retail.sc.com/sg/nfs/login.htm",
     "title": "SC",
-    "favicon": "https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.png"
+    "favicon": "https://av.sc.com/assets/global/images/components/header/standard-chartered-logo.png",
+    "keywords": ["finance", "sc", "standard character", "bank", "sg"]
   },
   {
     "url": "https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action",
-    "title": "Citi"
+    "title": "Citi",
+    "keywords": ["finance", "citi", "citibank", "bank", "sg"]
   },
   {
     "url": "https://internet-banking.dbs.com.sg/IB/Welcome",
-    "title": "DBS"
+    "title": "DBS",
+    "keywords": ["finance", "dbs", "posb", "bank", "sg"]
   },
   {
     "url": "https://myebank.icbc.com.cn/icbc/perbank/index.jsp?areaCode=0103&dse_locale=zh-CN",
     "title": "ICBC",
-    "favicon": "https://a3linux.github.io/imgs/icbc.png"
+    "favicon": "https://a3linux.github.io/imgs/icbc.png",
+    "keywords": ["finance", "icbc", "bank", "cn"]
   },
   {
     "url": "https://www.paypal.com/signin",
-    "title": "PayPal"
+    "title": "PayPal",
+    "keywords": ["finance", "paypal"]
   },
   {
     "url": "https://viewqwest.com/sg/",
-    "title": "VieQWest"
+    "title": "VieQWest",
+    "keywords": ["telecom", "viewquest"]
   },
   {
     "url": "https://onepass.singtel.com/sso/login/",
-    "title": "Singtel"
+    "title": "Singtel",
+    "keywords": ["telecom", "singtel"]
   },
   {
     "url": "http://family.vivifi.me/",
-    "title": "VIVIFI"
+    "title": "VIVIFI",
+    "keywords": ["telecom", "vivifi", "mobile"]
   },
   {
     "url": "https://eight.com.sg/",
-    "title": "Eight"
+    "title": "Eight",
+    "keywords": ["telecom", "eight", "mobile"]
   },
   {
     "url": "https://mytax.iras.gov.sg/ESVWeb/default.aspx",
-    "title": "IRAS"
+    "title": "IRAS",
+    "keywords": ["gov", "iras", "sg"]
   },
   {
     "url": "https://www.cpf.gov.sg/member/login/qr-code",
-    "title": "CPF"
+    "title": "CPF",
+    "keywords": ["gov", "cpf", "sg"]
   },
   {
     "url": "https://eservices.ica.gov.sg/",
     "title": "ICA",
-    "favicon": "https://www.ica.gov.sg/Cwp/assets/ica/images/logo/ica_logo_new.svg"
+    "favicon": "https://www.ica.gov.sg/Cwp/assets/ica/images/logo/ica_logo_new.svg",
+    "keywords": ["gov", "ica", "sg"]
   },
   {
     "url": "https://me.income.com.sg/",
     "title": "INCOME",
-    "favicon": "https://www.income.com.sg/assets/images/icons/logo-income.svg"
+    "favicon": "https://www.income.com.sg/assets/images/icons/logo-income.svg",
+    "keywords": ["finance", "income", "sg", "insurrance"]
   },
   {
     "url": "https://www.aoncare.sg/",
-    "title": "AON CARE"
+    "title": "AON CARE",
+    "keywords": ["finance", "anoncare", "sg", "insurrance"]
   },
   {
     "url": "https://www.nlb.gov.sg/",
-    "title": "NLB"
+    "title": "NLB",
+    "keywords": ["library", "NLB", "books"]
   },
   {
     "url": "https://www.youtube.com/",
-    "title": "Youtube"
+    "title": "Youtube",
+    "keywords": ["youtube", "entitlement", "videos", "google"]
   },
   {
     "url": "https://agoda.com/",
-    "title": "Agoda"
+    "title": "Agoda",
+    "keywords": ["travel", "agent", "agoda", "online", "sg"]
   },
   {
     "url": "http://ctrip.com",
-    "title": "CTrip"
+    "title": "CTrip",
+    "keywords": ["travel", "agent", "ctrip", "online", "cn"]
   },
   {
     "url": "https://www.wahdah.my",
-    "title": "WAHDAH MY"
-  },
-  {
-    "url": "https://www.expedia.com.sg",
-    "title": "Expedia"
+    "title": "WAHDAH MY",
+    "keywords": ["travel", "car", "wahdah", "rental", "my"]
   },
   {
     "url": "https://www.klook.com/en-SG",
-    "title": "KLook"
+    "title": "KLook",
+    "keywords": ["travel", "agent", "klook", "online", "sg"]
   },
   {
     "url": "https://sg.trip.com/",
-    "title": "Trip.com"
+    "title": "Trip.com",
+    "keywords": ["travel", "agent", "trip", "online", "cn"]
   },
   {
     "url": "https://food.grab.com/sg/en/",
-    "title": "GrabFood"
+    "title": "GrabFood",
+    "keywords": ["local", "life", "grab", "food", "sg"]
   },
   {
     "url": "https://www.pizzahut.com.sg/home/",
-    "title": "Pizzahut"
+    "title": "Pizzahut",
+    "keywords": ["local", "life", "pizzahut", "food", "sg"]
   },
   {
     "url": "https://finance.yahoo.com/",
-    "title": "Yahoo"
+    "title": "Yahoo",
+    "keywords": ["finance", "yahoo", "news"]
   },
   {
     "url": "https://seekingalpha.com",
-    "title": "Alpha Picks"
+    "title": "Alpha Picks",
+    "keywords": ["finance", "seekingalpha", "news"]
   },
   {
     "url": "https://investing.com",
-    "title": "Investing"
+    "title": "Investing",
+    "keywords": ["finance", "investing", "news"]
   },
   {
     "url": "https://drive.google.com/drive/my-drive",
-    "title": "Google Driver"
+    "title": "Google Driver",
+    "keywords": ["google", "driver", "file"]
   },
   {
     "url": "https://calendar.google.com",
-    "title": "Calendar"
+    "title": "Calendar",
+    "keywords": ["google", "calendar", "plan"]
   },
   {
     "url": "https://sheets.google.com",
-    "title": "Google Sheets"
+    "title": "Google Sheets",
+    "keywords": ["google", "sheets", "file"]
   },
   {
     "url": "https://docs.google.com",
-    "title": "Google Docs"
+    "title": "Google Docs",
+    "keywords": ["google", "docs", "file"]
   },
   {
     "url": "https://web.telegram.org/z/",
-    "title": "Telegram"
+    "title": "Telegram",
+    "keywords": ["chat", "social", "telegram", "web"]
   },
   {
     "url": "https://www.cloudflare.com/",
-    "title": "Cloudflare"
+    "title": "Cloudflare",
+    "keywords": ["cloud", "cloudflare", "DNS", "homecloud"]
   },
   {
     "url": "https://www.zerossl.com/",
-    "title": "ZeroSSL"
+    "title": "ZeroSSL",
+    "keywords": ["cloud", "https", "cert", "homecloud"]
   },
   {
     "url": "https://almalinux.org/",
-    "title": "AlmaLinux"
+    "title": "AlmaLinux",
+    "keywords": ["linux", "almalinux", "rhel", "enterprise"]
   },
   {
     "url": "https://9to5linux.com/",
-    "title": "9to5Linux"
+    "title": "9to5Linux",
+    "keywords": ["linux", "news"]
+  },
+  {
+    "url": "https://www.nlb.gov.sg/seatbooking/seatavailability",
+    "title": "NLB Seating",
+    "keywords": ["library", "seating", "booking"]
   },
   {
     "url": "https://chronas.org/",
@@ -261,9 +321,5 @@
   {
     "url": "https://rpssg6.udemy.com/organization/home/",
     "title": "RP Udemy"
-  },
-  {
-    "url": "https://www.nlb.gov.sg/seatbooking/seatavailability",
-    "title": "NLB Seating"
   }
 ]

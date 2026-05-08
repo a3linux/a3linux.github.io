@@ -7,83 +7,177 @@
     <meta name="description" content="HomeCloud - Quick Bookmarks" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-.btn img {
-  width: 64px;
-  min-width: 48px;
-  margin: 5px;
-}
+      :root {
+        --bg-color: #f8f9fa;
+        --card-bg: #ffffff;
+        --text-color: #212529;
+        --navbar-bg: #343a40;
+        --card-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      [data-theme="dark"] {
+        --bg-color: #212529;
+        --card-bg: #343a40;
+        --text-color: #f8f9fa;
+        --navbar-bg: #1a1d20;
+        --card-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .navbar {
+        background-color: var(--navbar-bg) !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .bookmark-card {
+        background-color: var(--card-bg);
+        color: var(--text-color);
+        transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+        border: none;
+        border-radius: 8px;
+        box-shadow: var(--card-shadow);
+      }
+
+      .bookmark-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      }
+
+      .favicon-img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+
+      .search-container {
+        max-width: 600px;
+        margin: 1rem auto;
+      }
+
+      .bookmark-card {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+      }
+
+      .bookmark-card .card-body {
+        padding: 4px;
+        width: 100%;
+        height: 100%;
+      }
+
+      #theme-toggle {
+        cursor: pointer;
+      }
     </style>
   </head>
-  <body class="bg-secondary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <form method="get" action="https://www.google.com/search">
-          <input class="form-control" type="text" name="q" size="64" maxlength="255" value="" placeholder="Google Search..." autofocus />
-        </form>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <form method="get" id="search" action="https://duckduckgo.com/">
-          <input class="form-control" type="text" name="q" maxlength="300" placeholder="DuckDuckGo Search .."/>
-        </form>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">HomeCloud</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <button id="theme-toggle" class="btn btn-outline-light ml-lg-3">🌓 Toggle Theme</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container-fluid bg-secondary">
-      <div class="row">
-        <div id="url-list" class="col-12"></div>
-      </div>
-    </div>
-
     <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">a3linux.com</a></li>-->
-        </ul>
-      <p class="text-center text-muted">© 2024 a3linux.com</p>
+      <div class="search-container">
+        <input type="text" id="filter-input" class="form-control form-control-lg shadow-sm" placeholder="Search your bookmarks..." autofocus />
+      </div>
+
+      <div id="url-list" style="display:flex; flex-wrap:wrap; gap:6px;">
+        <!-- Bookmarks will be injected here -->
+      </div>
+
+      <footer class="py-5 mt-5 text-center text-muted">
+        <p>© 2024 a3linux.com</p>
       </footer>
     </div>
 
     <script>
+      let bookmarks = [];
+
       document.addEventListener("DOMContentLoaded", () => {
+        const filterInput = document.getElementById('filter-input');
+        const urlList = document.getElementById('url-list');
+        const themeToggle = document.getElementById('theme-toggle');
+
+        // Theme handling
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+          const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+          if (isDark) {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+          }
+        });
+
+        // Fetch bookmarks
         fetch('bookmarks.json')
           .then(response => response.json())
           .then(data => {
-            const urlList = document.getElementById('url-list');
-            data.forEach(item => {
-              const urlItem = document.createElement('a');
-              urlItem.className = "btn btn-secondary btn-lg"
-              urlItem.href = item.url;
-              urlItem.title = item.title;
-              urlItem.alt = item.title;
-              urlItem.target = "_blank"
-
-              const favicon = document.createElement('img');
-              if (item.hasOwnProperty("favicon")) {
-                favicon.src = item.favicon;
-              } else {
-                favicon.src = `https://www.google.com/s2/favicons?domain_url=${item.url}&sz=64`;
-              }
-              favicon.alt = item.title;
-              favicon.title = item.title;
-
-              const linkText = document.createElement('span');
-              linkText.textContent = ''; // Hide URL text by default
-
-              favicon.onerror = () => {
-                // Display title if the favicon fails to load
-                linkText.textContent = item.title;
-              };
-
-              favicon.onload = () => {
-                // If favicon loads successfully, append it
-                urlItem.appendChild(favicon);
-              };
-
-              urlItem.appendChild(linkText);
-              urlList.appendChild(urlItem);
-            });
+            bookmarks = data;
+            renderBookmarks(bookmarks);
           })
           .catch(error => console.error('Error loading JSON:', error));
+
+        // Filter functionality
+        filterInput.addEventListener('input', (e) => {
+          const searchTerm = e.target.value.toLowerCase();
+          const filtered = bookmarks.filter(item =>
+            item.title.toLowerCase().includes(searchTerm) ||
+            item.url.toLowerCase().includes(searchTerm) ||
+            (item.keywords && item.keywords.some(k => k.toLowerCase().includes(searchTerm)))
+          );
+          renderBookmarks(filtered);
+        });
+
+        function renderBookmarks(items) {
+          urlList.innerHTML = '';
+          items.forEach(item => {
+            const card = document.createElement('a');
+            card.className = 'card text-decoration-none shadow-sm bookmark-card';
+            card.href = item.url;
+            card.target = '_blank';
+            card.title = item.title;
+
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body d-flex align-items-center justify-content-center';
+
+            const img = document.createElement('img');
+            img.className = 'favicon-img';
+            if (item.hasOwnProperty("favicon")) {
+              img.src = item.favicon;
+            } else {
+              img.src = `https://www.google.com/s2/favicons?domain_url=${item.url}&sz=64`;
+            }
+            img.alt = item.title;
+
+            cardBody.appendChild(img);
+            card.appendChild(cardBody);
+            urlList.appendChild(card);
+          });
+        }
       });
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
