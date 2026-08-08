@@ -155,6 +155,11 @@
     "keywords": ["telecom", "viewquest"]
   },
   {
+    "url": "https://manage.alta.inc/",
+    "title": "Alta Labs",
+    "keywords": ["telecom", "router", "homecloud"]
+  },
+  {
     "url": "https://onepass.singtel.com/sso/login/",
     "title": "Singtel",
     "keywords": ["telecom", "singtel"]
