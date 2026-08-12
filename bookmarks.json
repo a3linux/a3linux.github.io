@@ -113,6 +113,11 @@
     "keywords": ["ecom", "redmart", "shopping", "sg", "baking"]
   },
   {
+    "url": "https://aliexpress.com",
+    "title": "AliExpress",
+    "keywords": ["ecom", "aliexpress", "shopping"]
+  },
+  {
     "url": "https://us.etrade.com/e/t/user/login",
     "title": "ETrade",
     "keywords": ["finance", "etrade", "money"]
